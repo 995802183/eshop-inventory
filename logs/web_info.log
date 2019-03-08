@@ -1,0 +1,1653 @@
+2019-03-04 10:38:04.930 [main] INFO  com.wyw.eshop.cache.EshopCacheApplication - Starting EshopCacheApplication on search with PID 25503 (/home/wyw/app/workspace/eshop-cache/target/classes started by wyw in /home/wyw/app/workspace/eshop-inventory)
+2019-03-04 10:38:04.938 [main] INFO  com.wyw.eshop.cache.EshopCacheApplication - The following profiles are active: dev
+2019-03-04 10:38:05.886 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-03-04 10:38:05.888 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-04 10:38:05.923 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21ms. Found 0 repository interfaces.
+2019-03-04 10:38:06.341 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$39687140] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-04 10:38:06.410 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$65b65fbd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-04 10:38:06.822 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-03-04 10:38:06.837 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-03-04 10:38:06.847 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-03-04 10:38:06.847 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-03-04 10:38:06.854 [main] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+2019-03-04 10:38:06.932 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-03-04 10:38:06.933 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1912 ms
+2019-03-04 10:38:08.011 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-04 10:38:08.193 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2019-03-04 10:38:08.194 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2019-03-04 10:38:08.195 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2019-03-04 10:38:08.197 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2019-03-04 10:38:08.806 [main] INFO  org.apache.kafka.clients.consumer.ConsumerConfig - ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.74.133:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = infoChange
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2019-03-04 10:38:08.867 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version : 2.0.1
+2019-03-04 10:38:08.868 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId : fa14705e51bd2ce5
+2019-03-04 10:38:09.076 [main] INFO  org.apache.kafka.clients.Metadata - Cluster ID: UlR5cOxvRPaf-wLLrLCVsg
+2019-03-04 10:38:09.108 [main] INFO  org.apache.kafka.clients.consumer.ConsumerConfig - ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.74.133:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = infoChange
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2019-03-04 10:38:09.127 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version : 2.0.1
+2019-03-04 10:38:09.128 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId : fa14705e51bd2ce5
+2019-03-04 10:38:09.131 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService
+2019-03-04 10:38:09.153 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-03-04 10:38:09.174 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2019-03-04 10:38:09.178 [main] INFO  com.wyw.eshop.cache.EshopCacheApplication - Started EshopCacheApplication in 45.151 seconds (JVM running for 56.515)
+2019-03-04 10:38:09.193 [infoChange-0-C-1] INFO  org.apache.kafka.clients.Metadata - Cluster ID: UlR5cOxvRPaf-wLLrLCVsg
+2019-03-04 10:38:09.203 [infoChange-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-2, groupId=infoChange] Discovered group coordinator 192.168.74.133:9092 (id: 2147483646 rack: null)
+2019-03-04 10:38:09.206 [infoChange-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-2, groupId=infoChange] Revoking previously assigned partitions []
+2019-03-04 10:38:09.207 [infoChange-0-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - partitions revoked: []
+2019-03-04 10:38:09.207 [infoChange-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-2, groupId=infoChange] (Re-)joining group
+2019-03-04 10:38:09.313 [infoChange-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-2, groupId=infoChange] Successfully joined group with generation 5
+2019-03-04 10:38:09.314 [infoChange-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-2, groupId=infoChange] Setting newly assigned partitions [infoChange-0]
+2019-03-04 10:38:09.332 [infoChange-0-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - partitions assigned: [infoChange-0]
+2019-03-04 10:49:53.253 [Thread-96] INFO  com.wyw.eshop.cache.kafka.KafkaMessageProcessor - received message is : {"serviceId":"productInfoService","productId":1}
+2019-03-04 10:51:26.044 [infoChange-0-C-1] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService
+2019-03-04 10:51:26.062 [infoChange-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer - Consumer stopped
+2019-03-04 10:51:26.092 [Thread-91] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-03-04 10:52:50.201 [main] INFO  com.wyw.eshop.cache.EshopCacheApplication - Starting EshopCacheApplication on search with PID 27330 (/home/wyw/app/workspace/eshop-cache/target/classes started by wyw in /home/wyw/app/workspace/eshop-inventory)
+2019-03-04 10:52:50.206 [main] INFO  com.wyw.eshop.cache.EshopCacheApplication - The following profiles are active: dev
+2019-03-04 10:52:51.023 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-03-04 10:52:51.025 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-04 10:52:51.054 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17ms. Found 0 repository interfaces.
+2019-03-04 10:52:51.815 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$aff2faf2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-04 10:52:51.865 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$dc40e96f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-04 10:52:52.270 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-03-04 10:52:52.286 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-03-04 10:52:52.299 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-03-04 10:52:52.300 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-03-04 10:52:52.309 [main] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+2019-03-04 10:52:52.404 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-03-04 10:52:52.404 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2151 ms
+2019-03-04 10:52:53.653 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-04 10:52:53.808 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2019-03-04 10:52:53.809 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2019-03-04 10:52:53.810 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2019-03-04 10:52:53.811 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2019-03-04 10:52:54.387 [main] INFO  org.apache.kafka.clients.consumer.ConsumerConfig - ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.74.133:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = infoChange
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2019-03-04 10:52:54.437 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version : 2.0.1
+2019-03-04 10:52:54.437 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId : fa14705e51bd2ce5
+2019-03-04 10:52:54.545 [main] INFO  org.apache.kafka.clients.Metadata - Cluster ID: UlR5cOxvRPaf-wLLrLCVsg
+2019-03-04 10:52:54.557 [main] INFO  org.apache.kafka.clients.consumer.ConsumerConfig - ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.74.133:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = infoChange
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2019-03-04 10:52:54.561 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version : 2.0.1
+2019-03-04 10:52:54.561 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId : fa14705e51bd2ce5
+2019-03-04 10:52:54.564 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService
+2019-03-04 10:52:54.580 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-03-04 10:52:54.589 [infoChange-0-C-1] INFO  org.apache.kafka.clients.Metadata - Cluster ID: UlR5cOxvRPaf-wLLrLCVsg
+2019-03-04 10:52:54.592 [infoChange-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-2, groupId=infoChange] Discovered group coordinator 192.168.74.133:9092 (id: 2147483646 rack: null)
+2019-03-04 10:52:54.628 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2019-03-04 10:52:54.631 [main] INFO  com.wyw.eshop.cache.EshopCacheApplication - Started EshopCacheApplication in 45.28 seconds (JVM running for 56.174)
+2019-03-04 10:52:54.640 [infoChange-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-2, groupId=infoChange] Revoking previously assigned partitions []
+2019-03-04 10:52:54.641 [infoChange-0-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - partitions revoked: []
+2019-03-04 10:52:54.641 [infoChange-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-2, groupId=infoChange] (Re-)joining group
+2019-03-04 10:52:54.661 [infoChange-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-2, groupId=infoChange] Successfully joined group with generation 7
+2019-03-04 10:52:54.662 [infoChange-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-2, groupId=infoChange] Setting newly assigned partitions [infoChange-0]
+2019-03-04 10:52:54.769 [infoChange-0-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - partitions assigned: [infoChange-0]
+2019-03-04 10:53:40.563 [Thread-4] INFO  com.wyw.eshop.cache.kafka.KafkaMessageProcessor - received message is : Exception in thread "Thread-96" org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.builder.BuilderException: Error invoking SqlProvider method (tk.mybatis.mapper.provider.base.BaseSelectProvider.dynamicSQL).  Cause: java.lang.InstantiationException: tk.mybatis.mapper.provider.base.BaseSelectProvider
+2019-03-04 10:54:01.673 [Thread-5] INFO  com.wyw.eshop.cache.kafka.KafkaMessageProcessor - received message is : {"serviceId":"productInfoService","productId":1}
+2019-03-04 10:54:01.777 [Thread-5] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-03-04 10:54:02.556 [Thread-5] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2019-03-04 10:54:02.558 [Thread-5] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2019-03-04 11:00:36.321 [Thread-6] INFO  com.wyw.eshop.cache.kafka.KafkaMessageProcessor - received message is : {"serviceId":"productInfoService","productId":2}
+2019-03-04 11:01:22.612 [Thread-7] INFO  com.wyw.eshop.cache.kafka.KafkaMessageProcessor - received message is : {"serviceId":"productInfoService","productId":2}
+2019-03-04 11:01:56.109 [infoChange-0-C-1] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService
+2019-03-04 11:01:56.124 [infoChange-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer - Consumer stopped
+2019-03-04 11:01:56.143 [Thread-3] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-03-04 11:03:51.615 [main] INFO  com.wyw.eshop.cache.EshopCacheApplication - Starting EshopCacheApplication on search with PID 27909 (/home/wyw/app/workspace/eshop-cache/target/classes started by wyw in /home/wyw/app/workspace/eshop-inventory)
+2019-03-04 11:03:51.621 [main] INFO  com.wyw.eshop.cache.EshopCacheApplication - The following profiles are active: dev
+2019-03-04 11:03:52.296 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-03-04 11:03:52.298 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-04 11:03:52.323 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14ms. Found 0 repository interfaces.
+2019-03-04 11:03:52.655 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$a8d33afa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-04 11:03:52.692 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d5212977] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-04 11:03:53.020 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-03-04 11:03:53.036 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-03-04 11:03:53.048 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-03-04 11:03:53.049 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-03-04 11:03:53.056 [main] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+2019-03-04 11:03:53.151 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-03-04 11:03:53.151 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1487 ms
+2019-03-04 11:03:54.307 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-04 11:03:54.449 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2019-03-04 11:03:54.450 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2019-03-04 11:03:54.451 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2019-03-04 11:03:54.451 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2019-03-04 11:03:54.988 [main] INFO  org.apache.kafka.clients.consumer.ConsumerConfig - ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.74.133:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = infoChange
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2019-03-04 11:03:55.037 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version : 2.0.1
+2019-03-04 11:03:55.037 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId : fa14705e51bd2ce5
+2019-03-04 11:03:55.147 [main] INFO  org.apache.kafka.clients.Metadata - Cluster ID: UlR5cOxvRPaf-wLLrLCVsg
+2019-03-04 11:03:55.158 [main] INFO  org.apache.kafka.clients.consumer.ConsumerConfig - ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.74.133:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = infoChange
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2019-03-04 11:03:55.162 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version : 2.0.1
+2019-03-04 11:03:55.162 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId : fa14705e51bd2ce5
+2019-03-04 11:03:55.165 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService
+2019-03-04 11:03:55.180 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-03-04 11:03:55.204 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2019-03-04 11:03:55.232 [infoChange-0-C-1] INFO  org.apache.kafka.clients.Metadata - Cluster ID: UlR5cOxvRPaf-wLLrLCVsg
+2019-03-04 11:03:55.238 [main] INFO  com.wyw.eshop.cache.EshopCacheApplication - Started EshopCacheApplication in 44.437 seconds (JVM running for 55.9)
+2019-03-04 11:03:55.241 [infoChange-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-2, groupId=infoChange] Discovered group coordinator 192.168.74.133:9092 (id: 2147483646 rack: null)
+2019-03-04 11:03:55.245 [infoChange-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-2, groupId=infoChange] Revoking previously assigned partitions []
+2019-03-04 11:03:55.245 [infoChange-0-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - partitions revoked: []
+2019-03-04 11:03:55.245 [infoChange-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-2, groupId=infoChange] (Re-)joining group
+2019-03-04 11:03:55.265 [infoChange-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-2, groupId=infoChange] Successfully joined group with generation 9
+2019-03-04 11:03:55.266 [infoChange-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-2, groupId=infoChange] Setting newly assigned partitions [infoChange-0]
+2019-03-04 11:03:55.272 [infoChange-0-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - partitions assigned: [infoChange-0]
+2019-03-04 11:05:05.370 [Thread-4] INFO  com.wyw.eshop.cache.kafka.KafkaMessageProcessor - received message is : {"serviceId":"productInfoService","productId":2}
+2019-03-04 11:05:05.532 [Thread-4] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-03-04 11:05:06.159 [Thread-4] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2019-03-04 11:05:06.162 [Thread-4] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2019-03-04 11:05:21.667 [Thread-5] INFO  com.wyw.eshop.cache.kafka.KafkaMessageProcessor - received message is : {"serviceId":"productInfoService","productId":1}
+2019-03-04 11:08:19.900 [infoChange-0-C-1] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService
+2019-03-04 11:08:19.912 [infoChange-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer - Consumer stopped
+2019-03-04 11:08:19.929 [Thread-3] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-03-04 11:21:34.087 [main] INFO  com.wyw.eshop.cache.EshopCacheApplication - Starting EshopCacheApplication on search with PID 28719 (/home/wyw/app/workspace/eshop-cache/target/classes started by wyw in /home/wyw/app/workspace/eshop-inventory)
+2019-03-04 11:21:34.092 [main] INFO  com.wyw.eshop.cache.EshopCacheApplication - The following profiles are active: dev
+2019-03-04 11:21:35.107 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-03-04 11:21:35.112 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-04 11:21:35.155 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19ms. Found 0 repository interfaces.
+2019-03-04 11:21:35.584 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$60c324] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-04 11:21:35.640 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2caeb1a1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-04 11:21:36.046 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-03-04 11:21:36.062 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-03-04 11:21:36.071 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-03-04 11:21:36.071 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-03-04 11:21:36.080 [main] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+2019-03-04 11:21:36.159 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-03-04 11:21:36.159 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2006 ms
+2019-03-04 11:21:37.542 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-04 11:21:37.697 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2019-03-04 11:21:37.698 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2019-03-04 11:21:37.699 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2019-03-04 11:21:37.699 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2019-03-04 11:21:38.453 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-03-04 11:21:39.082 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2019-03-04 11:21:39.146 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-03-04 11:23:52.375 [main] INFO  com.wyw.eshop.cache.EshopCacheApplication - Starting EshopCacheApplication on search with PID 28848 (/home/wyw/app/workspace/eshop-cache/target/classes started by wyw in /home/wyw/app/workspace/eshop-inventory)
+2019-03-04 11:23:52.379 [main] INFO  com.wyw.eshop.cache.EshopCacheApplication - The following profiles are active: dev
+2019-03-04 11:23:53.344 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-03-04 11:23:53.347 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-04 11:23:53.377 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16ms. Found 0 repository interfaces.
+2019-03-04 11:23:53.897 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$f5c325be] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-04 11:23:53.960 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2211143b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-04 11:23:54.392 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-03-04 11:23:54.411 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-03-04 11:23:54.429 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-03-04 11:23:54.429 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-03-04 11:23:54.437 [main] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+2019-03-04 11:23:54.515 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-03-04 11:23:54.516 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2095 ms
+2019-03-04 11:23:55.971 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-04 11:23:56.116 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2019-03-04 11:23:56.117 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2019-03-04 11:23:56.118 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2019-03-04 11:23:56.118 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2019-03-04 11:23:56.906 [main] INFO  org.apache.kafka.clients.consumer.ConsumerConfig - ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.74.133:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = infoChange
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2019-03-04 11:23:56.960 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version : 2.0.1
+2019-03-04 11:23:56.960 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId : fa14705e51bd2ce5
+2019-03-04 11:23:57.103 [main] INFO  org.apache.kafka.clients.Metadata - Cluster ID: UlR5cOxvRPaf-wLLrLCVsg
+2019-03-04 11:23:57.123 [main] INFO  org.apache.kafka.clients.consumer.ConsumerConfig - ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.74.133:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = infoChange
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2019-03-04 11:23:57.128 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version : 2.0.1
+2019-03-04 11:23:57.128 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId : fa14705e51bd2ce5
+2019-03-04 11:23:57.131 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService
+2019-03-04 11:23:57.166 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-03-04 11:23:57.193 [infoChange-0-C-1] INFO  org.apache.kafka.clients.Metadata - Cluster ID: UlR5cOxvRPaf-wLLrLCVsg
+2019-03-04 11:23:57.194 [infoChange-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-2, groupId=infoChange] Discovered group coordinator 192.168.74.133:9092 (id: 2147483646 rack: null)
+2019-03-04 11:23:57.226 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2019-03-04 11:23:57.235 [main] INFO  com.wyw.eshop.cache.EshopCacheApplication - Started EshopCacheApplication in 45.689 seconds (JVM running for 56.458)
+2019-03-04 11:23:57.243 [infoChange-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-2, groupId=infoChange] Revoking previously assigned partitions []
+2019-03-04 11:23:57.245 [infoChange-0-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - partitions revoked: []
+2019-03-04 11:23:57.245 [infoChange-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-2, groupId=infoChange] (Re-)joining group
+2019-03-04 11:23:57.304 [infoChange-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-2, groupId=infoChange] Successfully joined group with generation 11
+2019-03-04 11:23:57.307 [infoChange-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-2, groupId=infoChange] Setting newly assigned partitions [infoChange-0]
+2019-03-04 11:23:57.324 [infoChange-0-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - partitions assigned: [infoChange-0]
+2019-03-04 11:24:18.810 [Thread-4] INFO  com.wyw.eshop.cache.kafka.KafkaMessageProcessor - received message is : {"serviceId":"productInfoService","productId":1}
+2019-03-04 11:24:18.992 [Thread-4] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-03-04 12:55:21.521 [infoChange-0-C-1] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService
+2019-03-04 12:55:21.537 [infoChange-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer - Consumer stopped
+2019-03-04 12:55:21.564 [Thread-3] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-03-04 12:56:18.307 [main] INFO  com.wyw.eshop.cache.EshopCacheApplication - Starting EshopCacheApplication on search with PID 31600 (/home/wyw/app/workspace/eshop-cache/target/classes started by wyw in /home/wyw/app/workspace/eshop-inventory)
+2019-03-04 12:56:18.310 [main] INFO  com.wyw.eshop.cache.EshopCacheApplication - The following profiles are active: dev
+2019-03-04 12:56:19.756 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-03-04 12:56:19.759 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-04 12:56:19.807 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 28ms. Found 0 repository interfaces.
+2019-03-04 12:56:20.438 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$67055090] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-04 12:56:20.511 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$93533f0d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-04 12:56:21.270 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-03-04 12:56:21.292 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-03-04 12:56:21.305 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-03-04 12:56:21.305 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-03-04 12:56:21.316 [main] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+2019-03-04 12:56:21.464 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-03-04 12:56:21.464 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3083 ms
+2019-03-04 12:56:23.866 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-04 12:56:24.215 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2019-03-04 12:56:24.217 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2019-03-04 12:56:24.217 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2019-03-04 12:56:24.218 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2019-03-04 12:56:25.693 [main] INFO  org.apache.kafka.clients.consumer.ConsumerConfig - ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.74.133:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = infoChange
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2019-03-04 12:56:25.831 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version : 2.0.1
+2019-03-04 12:56:25.832 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId : fa14705e51bd2ce5
+2019-03-04 12:56:26.111 [main] INFO  org.apache.kafka.clients.Metadata - Cluster ID: UlR5cOxvRPaf-wLLrLCVsg
+2019-03-04 12:56:26.140 [main] INFO  org.apache.kafka.clients.consumer.ConsumerConfig - ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.74.133:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = infoChange
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2019-03-04 12:56:26.159 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version : 2.0.1
+2019-03-04 12:56:26.160 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId : fa14705e51bd2ce5
+2019-03-04 12:56:26.168 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService
+2019-03-04 12:56:26.227 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-03-04 12:56:26.251 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2019-03-04 12:56:26.259 [main] INFO  com.wyw.eshop.cache.EshopCacheApplication - Started EshopCacheApplication in 49.131 seconds (JVM running for 60.302)
+2019-03-04 12:56:26.285 [infoChange-0-C-1] INFO  org.apache.kafka.clients.Metadata - Cluster ID: UlR5cOxvRPaf-wLLrLCVsg
+2019-03-04 12:56:26.291 [infoChange-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-2, groupId=infoChange] Discovered group coordinator 192.168.74.133:9092 (id: 2147483646 rack: null)
+2019-03-04 12:56:26.300 [infoChange-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-2, groupId=infoChange] Revoking previously assigned partitions []
+2019-03-04 12:56:26.300 [infoChange-0-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - partitions revoked: []
+2019-03-04 12:56:26.301 [infoChange-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-2, groupId=infoChange] (Re-)joining group
+2019-03-04 12:56:26.324 [infoChange-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-2, groupId=infoChange] Successfully joined group with generation 13
+2019-03-04 12:56:26.326 [infoChange-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-2, groupId=infoChange] Setting newly assigned partitions [infoChange-0]
+2019-03-04 12:56:26.433 [infoChange-0-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - partitions assigned: [infoChange-0]
+2019-03-04 12:58:02.397 [Thread-4] INFO  com.wyw.eshop.cache.kafka.KafkaMessageProcessor - received message is : {"serviceId":"productInfoService","productId":1}
+2019-03-04 12:58:02.530 [Thread-4] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-03-04 12:58:34.351 [infoChange-0-C-1] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService
+2019-03-04 12:58:34.365 [infoChange-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer - Consumer stopped
+2019-03-04 12:58:34.395 [Thread-3] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-03-04 13:44:53.039 [main] INFO  com.wyw.eshop.cache.EshopCacheApplication - Starting EshopCacheApplication on search with PID 33405 (/home/wyw/app/workspace/eshop-cache/target/classes started by wyw in /home/wyw/app/workspace/eshop-inventory)
+2019-03-04 13:44:53.044 [main] INFO  com.wyw.eshop.cache.EshopCacheApplication - The following profiles are active: dev
+2019-03-04 13:44:54.091 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-03-04 13:44:54.096 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-04 13:44:54.134 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25ms. Found 0 repository interfaces.
+2019-03-04 13:44:54.623 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$f23423b5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-04 13:44:54.683 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1e821232] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-04 13:44:55.170 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-03-04 13:44:55.188 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-03-04 13:44:55.202 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-03-04 13:44:55.203 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-03-04 13:44:55.217 [main] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+2019-03-04 13:44:55.324 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-03-04 13:44:55.325 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2233 ms
+2019-03-04 13:44:57.137 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-04 13:44:57.381 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2019-03-04 13:44:57.383 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2019-03-04 13:44:57.384 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2019-03-04 13:44:57.385 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2019-03-04 13:44:58.397 [main] INFO  org.ehcache.core.EhcacheManager - Cache 'local' created in EhcacheManager.
+2019-03-04 13:44:58.431 [main] INFO  org.ehcache.jsr107.Eh107CacheManager - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./home/wyw/app/workspace/eshop-cache/target/classes/ehcache.xml,Cache=local
+2019-03-04 13:44:58.439 [main] INFO  org.ehcache.jsr107.Eh107CacheManager - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./home/wyw/app/workspace/eshop-cache/target/classes/ehcache.xml,Cache=local
+2019-03-04 13:44:58.919 [main] INFO  org.apache.kafka.clients.consumer.ConsumerConfig - ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.74.133:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = infoChange
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2019-03-04 13:44:58.971 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version : 2.0.1
+2019-03-04 13:44:58.973 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId : fa14705e51bd2ce5
+2019-03-04 13:44:59.096 [main] INFO  org.apache.kafka.clients.Metadata - Cluster ID: UlR5cOxvRPaf-wLLrLCVsg
+2019-03-04 13:44:59.108 [main] INFO  org.apache.kafka.clients.consumer.ConsumerConfig - ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.74.133:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = infoChange
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2019-03-04 13:44:59.113 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version : 2.0.1
+2019-03-04 13:44:59.113 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId : fa14705e51bd2ce5
+2019-03-04 13:44:59.115 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService
+2019-03-04 13:44:59.162 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-03-04 13:44:59.212 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2019-03-04 13:44:59.216 [main] INFO  com.wyw.eshop.cache.EshopCacheApplication - Started EshopCacheApplication in 47.12 seconds (JVM running for 58.605)
+2019-03-04 13:44:59.224 [infoChange-0-C-1] INFO  org.apache.kafka.clients.Metadata - Cluster ID: UlR5cOxvRPaf-wLLrLCVsg
+2019-03-04 13:44:59.232 [infoChange-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-2, groupId=infoChange] Discovered group coordinator 192.168.74.133:9092 (id: 2147483646 rack: null)
+2019-03-04 13:44:59.250 [infoChange-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-2, groupId=infoChange] Revoking previously assigned partitions []
+2019-03-04 13:44:59.250 [infoChange-0-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - partitions revoked: []
+2019-03-04 13:44:59.251 [infoChange-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-2, groupId=infoChange] (Re-)joining group
+2019-03-04 13:44:59.282 [infoChange-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-2, groupId=infoChange] Successfully joined group with generation 15
+2019-03-04 13:44:59.283 [infoChange-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-2, groupId=infoChange] Setting newly assigned partitions [infoChange-0]
+2019-03-04 13:44:59.397 [infoChange-0-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - partitions assigned: [infoChange-0]
+2019-03-04 13:46:19.671 [Thread-4] INFO  com.wyw.eshop.cache.kafka.KafkaMessageProcessor - received message is : {"serviceId":"productInfoService","productId":1}
+2019-03-04 13:46:19.821 [Thread-4] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-03-04 13:46:21.489 [Thread-4] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2019-03-04 13:46:21.491 [Thread-4] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2019-03-04 13:52:37.677 [infoChange-0-C-1] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService
+2019-03-04 13:52:37.691 [infoChange-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer - Consumer stopped
+2019-03-04 13:52:37.708 [Thread-3] INFO  org.ehcache.core.EhcacheManager - Cache 'local' removed from EhcacheManager.
+2019-03-04 13:52:37.719 [Thread-3] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-03-04 13:53:37.326 [main] INFO  com.wyw.eshop.cache.EshopCacheApplication - Starting EshopCacheApplication on search with PID 33982 (/home/wyw/app/workspace/eshop-cache/target/classes started by wyw in /home/wyw/app/workspace/eshop-inventory)
+2019-03-04 13:53:37.334 [main] INFO  com.wyw.eshop.cache.EshopCacheApplication - The following profiles are active: dev
+2019-03-04 13:53:38.301 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-03-04 13:53:38.304 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-04 13:53:38.343 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25ms. Found 0 repository interfaces.
+2019-03-04 13:53:38.860 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$fdfb4e23] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-04 13:53:38.918 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2a493ca0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-04 13:53:39.342 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-03-04 13:53:39.361 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-03-04 13:53:39.374 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-03-04 13:53:39.374 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-03-04 13:53:39.383 [main] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+2019-03-04 13:53:39.482 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-03-04 13:53:39.482 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2086 ms
+2019-03-04 13:53:40.777 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-04 13:53:40.934 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2019-03-04 13:53:40.935 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2019-03-04 13:53:40.936 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2019-03-04 13:53:40.936 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2019-03-04 13:53:41.673 [main] INFO  org.ehcache.core.EhcacheManager - Cache 'local' created in EhcacheManager.
+2019-03-04 13:53:41.694 [main] INFO  org.ehcache.jsr107.Eh107CacheManager - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./home/wyw/app/workspace/eshop-cache/target/classes/ehcache.xml,Cache=local
+2019-03-04 13:53:41.699 [main] INFO  org.ehcache.jsr107.Eh107CacheManager - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./home/wyw/app/workspace/eshop-cache/target/classes/ehcache.xml,Cache=local
+2019-03-04 13:53:42.106 [main] INFO  org.apache.kafka.clients.consumer.ConsumerConfig - ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.74.133:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = infoChange
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2019-03-04 13:53:42.176 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version : 2.0.1
+2019-03-04 13:53:42.176 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId : fa14705e51bd2ce5
+2019-03-04 13:53:42.321 [main] INFO  org.apache.kafka.clients.Metadata - Cluster ID: UlR5cOxvRPaf-wLLrLCVsg
+2019-03-04 13:53:42.339 [main] INFO  org.apache.kafka.clients.consumer.ConsumerConfig - ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.74.133:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = infoChange
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2019-03-04 13:53:42.346 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version : 2.0.1
+2019-03-04 13:53:42.346 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId : fa14705e51bd2ce5
+2019-03-04 13:53:42.351 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService
+2019-03-04 13:53:42.384 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-03-04 13:53:42.431 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2019-03-04 13:53:42.439 [main] INFO  com.wyw.eshop.cache.EshopCacheApplication - Started EshopCacheApplication in 46.044 seconds (JVM running for 57.35)
+2019-03-04 13:53:42.454 [infoChange-0-C-1] INFO  org.apache.kafka.clients.Metadata - Cluster ID: UlR5cOxvRPaf-wLLrLCVsg
+2019-03-04 13:53:42.456 [infoChange-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-2, groupId=infoChange] Discovered group coordinator 192.168.74.133:9092 (id: 2147483646 rack: null)
+2019-03-04 13:53:42.460 [infoChange-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-2, groupId=infoChange] Revoking previously assigned partitions []
+2019-03-04 13:53:42.460 [infoChange-0-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - partitions revoked: []
+2019-03-04 13:53:42.460 [infoChange-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-2, groupId=infoChange] (Re-)joining group
+2019-03-04 13:53:42.479 [infoChange-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-2, groupId=infoChange] Successfully joined group with generation 17
+2019-03-04 13:53:42.480 [infoChange-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-2, groupId=infoChange] Setting newly assigned partitions [infoChange-0]
+2019-03-04 13:53:42.602 [infoChange-0-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - partitions assigned: [infoChange-0]
+2019-03-04 13:55:33.467 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-03-04 13:55:33.467 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-03-04 13:55:33.479 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 12 ms
+2019-03-04 13:55:33.616 [http-nio-8080-exec-1] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2019-03-04 13:55:33.617 [http-nio-8080-exec-1] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2019-03-04 13:55:55.275 [http-nio-8080-exec-2] INFO  org.apache.coyote.http11.Http11Processor - Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in the request target. The valid characters are defined in RFC 7230 and RFC 3986
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:467)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:294)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-03-04 13:57:16.262 [infoChange-0-C-1] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService
+2019-03-04 13:57:16.272 [infoChange-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer - Consumer stopped
+2019-03-04 13:57:16.286 [Thread-3] INFO  org.ehcache.core.EhcacheManager - Cache 'local' removed from EhcacheManager.
+2019-03-04 13:57:16.296 [Thread-3] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-03-04 13:58:12.565 [main] INFO  com.wyw.eshop.cache.EshopCacheApplication - Starting EshopCacheApplication on search with PID 34285 (/home/wyw/app/workspace/eshop-cache/target/classes started by wyw in /home/wyw/app/workspace/eshop-inventory)
+2019-03-04 13:58:12.568 [main] INFO  com.wyw.eshop.cache.EshopCacheApplication - The following profiles are active: dev
+2019-03-04 13:58:13.501 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-03-04 13:58:13.503 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-04 13:58:13.565 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 41ms. Found 0 repository interfaces.
+2019-03-04 13:58:14.024 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$83a51d2e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-04 13:58:14.086 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$aff30bab] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-04 13:58:14.596 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-03-04 13:58:14.621 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-03-04 13:58:14.639 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-03-04 13:58:14.639 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-03-04 13:58:14.647 [main] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+2019-03-04 13:58:14.760 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-03-04 13:58:14.760 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2152 ms
+2019-03-04 13:58:15.963 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-04 13:58:16.112 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2019-03-04 13:58:16.113 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2019-03-04 13:58:16.114 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2019-03-04 13:58:16.115 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2019-03-04 13:58:16.888 [main] INFO  org.ehcache.core.EhcacheManager - Cache 'local' created in EhcacheManager.
+2019-03-04 13:58:16.910 [main] INFO  org.ehcache.jsr107.Eh107CacheManager - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./home/wyw/app/workspace/eshop-cache/target/classes/ehcache.xml,Cache=local
+2019-03-04 13:58:16.915 [main] INFO  org.ehcache.jsr107.Eh107CacheManager - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./home/wyw/app/workspace/eshop-cache/target/classes/ehcache.xml,Cache=local
+2019-03-04 13:58:17.268 [main] INFO  org.apache.kafka.clients.consumer.ConsumerConfig - ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.74.133:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = infoChange
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2019-03-04 13:58:17.328 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version : 2.0.1
+2019-03-04 13:58:17.329 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId : fa14705e51bd2ce5
+2019-03-04 13:58:17.447 [main] INFO  org.apache.kafka.clients.Metadata - Cluster ID: UlR5cOxvRPaf-wLLrLCVsg
+2019-03-04 13:58:17.460 [main] INFO  org.apache.kafka.clients.consumer.ConsumerConfig - ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.74.133:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = infoChange
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2019-03-04 13:58:17.466 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version : 2.0.1
+2019-03-04 13:58:17.466 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId : fa14705e51bd2ce5
+2019-03-04 13:58:17.468 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService
+2019-03-04 13:58:17.505 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-03-04 13:58:17.561 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2019-03-04 13:58:17.564 [main] INFO  com.wyw.eshop.cache.EshopCacheApplication - Started EshopCacheApplication in 45.814 seconds (JVM running for 56.616)
+2019-03-04 13:58:17.559 [infoChange-0-C-1] INFO  org.apache.kafka.clients.Metadata - Cluster ID: UlR5cOxvRPaf-wLLrLCVsg
+2019-03-04 13:58:17.572 [infoChange-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-2, groupId=infoChange] Discovered group coordinator 192.168.74.133:9092 (id: 2147483646 rack: null)
+2019-03-04 13:58:17.582 [infoChange-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-2, groupId=infoChange] Revoking previously assigned partitions []
+2019-03-04 13:58:17.583 [infoChange-0-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - partitions revoked: []
+2019-03-04 13:58:17.584 [infoChange-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-2, groupId=infoChange] (Re-)joining group
+2019-03-04 13:58:17.612 [infoChange-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-2, groupId=infoChange] Successfully joined group with generation 19
+2019-03-04 13:58:17.614 [infoChange-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-2, groupId=infoChange] Setting newly assigned partitions [infoChange-0]
+2019-03-04 13:58:17.623 [infoChange-0-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - partitions assigned: [infoChange-0]
+2019-03-04 13:58:30.965 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-03-04 13:58:30.966 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-03-04 13:58:30.977 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 11 ms
+2019-03-04 13:58:31.069 [http-nio-8080-exec-1] INFO  com.wyw.eshop.cache.controller.CacheController - local cache productInfo:null
+2019-03-04 13:59:03.425 [Thread-4] INFO  com.wyw.eshop.cache.kafka.KafkaMessageProcessor - received message is : {"serviceId":"productInfoService","productId":1}
+2019-03-04 13:59:03.574 [Thread-4] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-03-04 13:59:04.831 [Thread-4] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2019-03-04 13:59:04.834 [Thread-4] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2019-03-04 13:59:11.810 [http-nio-8080-exec-2] INFO  com.wyw.eshop.cache.controller.CacheController - local cache productInfo:ProductInfo{id=1, name='iphone7', price=5600.0, pictures='a.jpg', specification='nothing', service='productInfoService', color='red', size='11', shopId=1}
+2019-03-04 14:03:58.611 [infoChange-0-C-1] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService
+2019-03-04 14:03:58.623 [infoChange-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer - Consumer stopped
+2019-03-04 14:04:58.237 [main] INFO  com.wyw.eshop.cache.EshopCacheApplication - Starting EshopCacheApplication on search with PID 34662 (/home/wyw/app/workspace/eshop-cache/target/classes started by wyw in /home/wyw/app/workspace/eshop-inventory)
+2019-03-04 14:04:58.243 [main] INFO  com.wyw.eshop.cache.EshopCacheApplication - The following profiles are active: dev
+2019-03-04 14:04:59.165 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-03-04 14:04:59.167 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-04 14:04:59.196 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16ms. Found 0 repository interfaces.
+2019-03-04 14:04:59.594 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$93c6ba8e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-04 14:04:59.645 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c014a90b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-04 14:05:00.058 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-03-04 14:05:00.073 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-03-04 14:05:00.082 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-03-04 14:05:00.082 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-03-04 14:05:00.091 [main] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+2019-03-04 14:05:00.164 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-03-04 14:05:00.164 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1869 ms
+2019-03-04 14:05:01.479 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-04 14:05:01.723 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2019-03-04 14:05:01.724 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2019-03-04 14:05:01.725 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2019-03-04 14:05:01.725 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2019-03-04 14:05:03.709 [main] INFO  org.ehcache.core.EhcacheManager - Cache 'local' created in EhcacheManager.
+2019-03-04 14:05:03.734 [main] INFO  org.ehcache.jsr107.Eh107CacheManager - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./home/wyw/app/workspace/eshop-cache/target/classes/ehcache.xml,Cache=local
+2019-03-04 14:05:03.742 [main] INFO  org.ehcache.jsr107.Eh107CacheManager - Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./home/wyw/app/workspace/eshop-cache/target/classes/ehcache.xml,Cache=local
+2019-03-04 14:05:04.123 [main] INFO  org.apache.kafka.clients.consumer.ConsumerConfig - ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.74.133:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = infoChange
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2019-03-04 14:05:04.191 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version : 2.0.1
+2019-03-04 14:05:04.191 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId : fa14705e51bd2ce5
+2019-03-04 14:05:04.302 [main] INFO  org.apache.kafka.clients.Metadata - Cluster ID: UlR5cOxvRPaf-wLLrLCVsg
+2019-03-04 14:05:04.314 [main] INFO  org.apache.kafka.clients.consumer.ConsumerConfig - ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.74.133:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = infoChange
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2019-03-04 14:05:04.320 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka version : 2.0.1
+2019-03-04 14:05:04.320 [main] INFO  org.apache.kafka.common.utils.AppInfoParser - Kafka commitId : fa14705e51bd2ce5
+2019-03-04 14:05:04.324 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService
+2019-03-04 14:05:04.358 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-03-04 14:05:04.384 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2019-03-04 14:05:04.394 [main] INFO  com.wyw.eshop.cache.EshopCacheApplication - Started EshopCacheApplication in 47.118 seconds (JVM running for 58.188)
+2019-03-04 14:05:04.415 [infoChange-0-C-1] INFO  org.apache.kafka.clients.Metadata - Cluster ID: UlR5cOxvRPaf-wLLrLCVsg
+2019-03-04 14:05:04.420 [infoChange-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-2, groupId=infoChange] Discovered group coordinator 192.168.74.133:9092 (id: 2147483646 rack: null)
+2019-03-04 14:05:04.424 [infoChange-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-2, groupId=infoChange] Revoking previously assigned partitions []
+2019-03-04 14:05:04.425 [infoChange-0-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - partitions revoked: []
+2019-03-04 14:05:04.425 [infoChange-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-2, groupId=infoChange] (Re-)joining group
+2019-03-04 14:05:04.445 [infoChange-0-C-1] INFO  o.a.k.c.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-2, groupId=infoChange] Successfully joined group with generation 21
+2019-03-04 14:05:04.447 [infoChange-0-C-1] INFO  o.a.k.c.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-2, groupId=infoChange] Setting newly assigned partitions [infoChange-0]
+2019-03-04 14:05:04.463 [infoChange-0-C-1] INFO  o.s.kafka.listener.KafkaMessageListenerContainer - partitions assigned: [infoChange-0]
+2019-03-04 14:05:29.241 [Thread-4] INFO  com.wyw.eshop.cache.kafka.KafkaMessageProcessor - received message is : {"serviceId":"productInfoService","productId":1}
+2019-03-04 14:05:29.404 [Thread-4] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-03-04 14:05:31.449 [Thread-4] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2019-03-04 14:05:31.451 [Thread-4] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2019-03-04 15:11:39.490 [Thread-5] INFO  com.wyw.eshop.cache.kafka.KafkaMessageProcessor - received message is :     
+2019-03-04 15:11:39.491 [Thread-7] INFO  com.wyw.eshop.cache.kafka.KafkaMessageProcessor - received message is : 
+2019-03-04 15:11:39.493 [Thread-6] INFO  com.wyw.eshop.cache.kafka.KafkaMessageProcessor - received message is : 
+2019-03-04 15:11:40.623 [Thread-8] INFO  com.wyw.eshop.cache.kafka.KafkaMessageProcessor - received message is : 
+2019-03-04 15:11:40.625 [Thread-9] INFO  com.wyw.eshop.cache.kafka.KafkaMessageProcessor - received message is : 
+2019-03-04 16:00:28.220 [infoChange-0-C-1] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService
+2019-03-04 16:00:28.228 [infoChange-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer - Consumer stopped
+2019-03-04 16:00:28.244 [Thread-3] INFO  org.ehcache.core.EhcacheManager - Cache 'local' removed from EhcacheManager.
+2019-03-04 16:00:28.257 [Thread-3] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-03-04 16:00:29.413 [Thread-3] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed

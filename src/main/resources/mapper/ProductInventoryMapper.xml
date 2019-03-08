@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wyw.eshop.inventory.mapper.ProductInventoryMapper">
+  <resultMap id="BaseResultMap" type="com.wyw.eshop.inventory.model.ProductInventory">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="product_id" jdbcType="INTEGER" property="productId" />
+    <result column="inventory_cnt" jdbcType="DECIMAL" property="inventoryCnt" />
+  </resultMap>
+
+
+  <select id="findById" parameterType="int" resultMap="BaseResultMap">
+    select * from product_inventory
+    <where>
+      and product_id = #{productId}
+    </where>
+  </select>
+</mapper>
