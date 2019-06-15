@@ -1,0 +1,86 @@
+2019-03-12 10:49:09.068 [main] INFO  com.wyw.eshop.webflux.WebFluxApplication - Starting WebFluxApplication on search with PID 25405 (/home/wyw/app/workspace/web-flux/target/classes started by wyw in /home/wyw/app/workspace/eshop-inventory)
+2019-03-12 10:49:09.082 [main] INFO  com.wyw.eshop.webflux.WebFluxApplication - No active profile set, falling back to default profiles: default
+2019-03-12 10:49:11.125 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2019-03-12 10:49:11.126 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2019-03-12 10:49:11.127 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2019-03-12 10:49:11.127 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2019-03-12 10:49:21.852 [main] INFO  o.s.boot.web.embedded.netty.NettyWebServer - Netty started on port(s): 7000
+2019-03-12 10:49:21.861 [main] INFO  com.wyw.eshop.webflux.WebFluxApplication - Started WebFluxApplication in 53.551 seconds (JVM running for 64.261)
+2019-03-12 10:52:10.258 [reactor-http-epoll-2] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-03-12 10:54:18.271 [Thread-3] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2019-03-12 10:55:18.850 [main] INFO  com.wyw.eshop.webflux.WebFluxApplication - Starting WebFluxApplication on search with PID 25758 (/home/wyw/app/workspace/web-flux/target/classes started by wyw in /home/wyw/app/workspace/eshop-inventory)
+2019-03-12 10:55:18.852 [main] INFO  com.wyw.eshop.webflux.WebFluxApplication - No active profile set, falling back to default profiles: default
+2019-03-12 10:55:20.755 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2019-03-12 10:55:20.756 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2019-03-12 10:55:20.757 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2019-03-12 10:55:20.757 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2019-03-12 10:55:31.513 [main] INFO  o.s.boot.web.embedded.netty.NettyWebServer - Netty started on port(s): 7000
+2019-03-12 10:55:31.522 [main] INFO  com.wyw.eshop.webflux.WebFluxApplication - Started WebFluxApplication in 53.273 seconds (JVM running for 64.176)
+2019-03-12 10:55:48.805 [reactor-http-epoll-2] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-03-12 14:19:56.698 [Thread-3] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2019-03-12 15:48:13.437 [main] INFO  com.wyw.eshop.webflux.WebFluxApplication - Starting WebFluxApplication on search with PID 31216 (/home/wyw/app/workspace/web-flux/target/classes started by wyw in /home/wyw/app/workspace/eshop-inventory)
+2019-03-12 15:48:13.443 [main] INFO  com.wyw.eshop.webflux.WebFluxApplication - No active profile set, falling back to default profiles: default
+2019-03-12 15:48:15.280 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2019-03-12 15:48:15.281 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2019-03-12 15:48:15.282 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2019-03-12 15:48:15.282 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2019-03-12 15:48:25.773 [main] INFO  o.s.boot.web.embedded.netty.NettyWebServer - Netty started on port(s): 7000
+2019-03-12 15:48:25.780 [main] INFO  com.wyw.eshop.webflux.WebFluxApplication - Started WebFluxApplication in 53.299 seconds (JVM running for 64.387)
+2019-03-12 15:50:13.534 [main] INFO  com.wyw.eshop.webflux.WebFluxApplication - Starting WebFluxApplication on search with PID 31372 (/home/wyw/app/workspace/web-flux/target/classes started by wyw in /home/wyw/app/workspace/eshop-inventory)
+2019-03-12 15:50:13.540 [main] INFO  com.wyw.eshop.webflux.WebFluxApplication - No active profile set, falling back to default profiles: default
+2019-03-12 15:50:15.388 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2019-03-12 15:50:15.389 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2019-03-12 15:50:15.389 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2019-03-12 15:50:15.390 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2019-03-12 15:50:25.870 [main] INFO  o.s.boot.web.embedded.netty.NettyWebServer - Netty started on port(s): 7000
+2019-03-12 15:50:25.885 [main] INFO  com.wyw.eshop.webflux.WebFluxApplication - Started WebFluxApplication in 53.257 seconds (JVM running for 64.224)
+2019-03-12 15:50:45.806 [reactor-http-epoll-2] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-03-12 16:17:02.403 [Thread-3] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2019-03-12 16:18:01.911 [main] INFO  com.wyw.eshop.webflux.WebFluxApplication - Starting WebFluxApplication on search with PID 32073 (/home/wyw/app/workspace/web-flux/target/classes started by wyw in /home/wyw/app/workspace/eshop-inventory)
+2019-03-12 16:18:01.915 [main] INFO  com.wyw.eshop.webflux.WebFluxApplication - No active profile set, falling back to default profiles: default
+2019-03-12 16:18:04.721 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2019-03-12 16:18:04.722 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2019-03-12 16:18:04.722 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2019-03-12 16:18:04.723 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2019-03-12 16:18:15.591 [main] INFO  o.s.boot.web.embedded.netty.NettyWebServer - Netty started on port(s): 7000
+2019-03-12 16:18:15.597 [main] INFO  com.wyw.eshop.webflux.WebFluxApplication - Started WebFluxApplication in 54.462 seconds (JVM running for 65.575)
+2019-03-12 16:20:08.033 [reactor-http-epoll-2] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-03-12 16:50:24.255 [Thread-3] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2019-03-12 16:52:32.935 [main] INFO  com.wyw.eshop.webflux.WebFluxApplication - Starting WebFluxApplication on search with PID 32908 (/home/wyw/app/workspace/web-flux/target/classes started by wyw in /home/wyw/app/workspace/eshop-inventory)
+2019-03-12 16:52:32.941 [main] INFO  com.wyw.eshop.webflux.WebFluxApplication - No active profile set, falling back to default profiles: default
+2019-03-12 16:52:35.064 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2019-03-12 16:52:35.065 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2019-03-12 16:52:35.066 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2019-03-12 16:52:35.066 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2019-03-12 16:52:45.783 [main] INFO  o.s.boot.web.embedded.netty.NettyWebServer - Netty started on port(s): 7000
+2019-03-12 16:52:45.788 [main] INFO  com.wyw.eshop.webflux.WebFluxApplication - Started WebFluxApplication in 53.535 seconds (JVM running for 64.475)
+2019-03-12 16:52:50.798 [reactor-http-epoll-2] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-03-12 17:19:09.825 [Thread-3] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2019-03-12 17:20:09.121 [main] INFO  com.wyw.eshop.webflux.WebFluxApplication - Starting WebFluxApplication on search with PID 33559 (/home/wyw/app/workspace/web-flux/target/classes started by wyw in /home/wyw/app/workspace/eshop-inventory)
+2019-03-12 17:20:09.125 [main] INFO  com.wyw.eshop.webflux.WebFluxApplication - No active profile set, falling back to default profiles: default
+2019-03-12 17:20:11.398 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2019-03-12 17:20:11.399 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2019-03-12 17:20:11.399 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2019-03-12 17:20:11.400 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2019-03-12 17:20:22.145 [main] INFO  o.s.boot.web.embedded.netty.NettyWebServer - Netty started on port(s): 7000
+2019-03-12 17:20:22.149 [main] INFO  com.wyw.eshop.webflux.WebFluxApplication - Started WebFluxApplication in 54.215 seconds (JVM running for 65.176)
+2019-03-12 17:27:08.816 [main] INFO  com.wyw.eshop.webflux.WebFluxApplication - Starting WebFluxApplication on search with PID 33797 (/home/wyw/app/workspace/web-flux/target/classes started by wyw in /home/wyw/app/workspace/eshop-inventory)
+2019-03-12 17:27:08.821 [main] INFO  com.wyw.eshop.webflux.WebFluxApplication - No active profile set, falling back to default profiles: default
+2019-03-12 17:27:10.930 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2019-03-12 17:27:10.931 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2019-03-12 17:27:10.932 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2019-03-12 17:27:10.932 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2019-03-12 17:27:21.425 [main] INFO  o.s.boot.web.embedded.netty.NettyWebServer - Netty started on port(s): 7000
+2019-03-12 17:27:21.429 [main] INFO  com.wyw.eshop.webflux.WebFluxApplication - Started WebFluxApplication in 53.398 seconds (JVM running for 64.281)
+2019-03-12 17:28:03.660 [reactor-http-epoll-2] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-03-12 17:42:36.949 [Thread-3] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2019-03-12 17:43:39.247 [main] INFO  com.wyw.eshop.webflux.WebFluxApplication - Starting WebFluxApplication on search with PID 34234 (/home/wyw/app/workspace/web-flux/target/classes started by wyw in /home/wyw/app/workspace/eshop-inventory)
+2019-03-12 17:43:39.251 [main] INFO  com.wyw.eshop.webflux.WebFluxApplication - No active profile set, falling back to default profiles: default
+2019-03-12 17:43:43.793 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2019-03-12 17:43:43.794 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2019-03-12 17:43:43.794 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2019-03-12 17:43:43.794 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2019-03-12 17:43:55.459 [main] INFO  o.s.boot.web.embedded.netty.NettyWebServer - Netty started on port(s): 7000
+2019-03-12 17:43:55.467 [main] INFO  com.wyw.eshop.webflux.WebFluxApplication - Started WebFluxApplication in 58.019 seconds (JVM running for 69.621)
+2019-03-12 17:44:16.465 [reactor-http-epoll-2] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-03-12 18:02:31.065 [Thread-3] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed

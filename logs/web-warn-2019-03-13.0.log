@@ -1,0 +1,1 @@
+2019-03-13 15:54:10.363 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.wyw.eshop.webflux]' package. Please check your configuration.

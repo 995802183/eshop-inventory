@@ -1,0 +1,9 @@
+2019-03-12 10:49:09.841 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.wyw.eshop.webflux]' package. Please check your configuration.
+2019-03-12 10:55:19.595 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.wyw.eshop.webflux]' package. Please check your configuration.
+2019-03-12 15:48:14.071 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.wyw.eshop.webflux]' package. Please check your configuration.
+2019-03-12 15:50:14.266 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.wyw.eshop.webflux]' package. Please check your configuration.
+2019-03-12 16:18:02.871 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.wyw.eshop.webflux]' package. Please check your configuration.
+2019-03-12 16:52:33.539 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.wyw.eshop.webflux]' package. Please check your configuration.
+2019-03-12 17:20:09.884 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.wyw.eshop.webflux]' package. Please check your configuration.
+2019-03-12 17:27:09.641 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.wyw.eshop.webflux]' package. Please check your configuration.
+2019-03-12 17:43:40.419 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.wyw.eshop.webflux]' package. Please check your configuration.
